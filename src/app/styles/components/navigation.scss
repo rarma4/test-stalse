@@ -1,0 +1,22 @@
+
+.logo-header{
+    font-family: var(--font-comfortaa);
+    &::after{
+        content: "API";
+        position: absolute;
+        font-size: 10px;
+        top:35px;
+        left:25px;
+        color: #001144;
+    }
+}
+
+.navbar-brand{
+    position: relative;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

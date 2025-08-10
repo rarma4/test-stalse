@@ -1,0 +1,16 @@
+
+.header{
+    background-image: linear-gradient(rgba(128, 128, 128, 0.5),rgba(138, 138, 138, 0.5)), url("../../../../public/assets/img/home-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    height: 80vh;
+
+    .home-title{
+        color:#0040ff!important;
+    }
+    .home-subtitle{
+        color:#001144!important;
+    }
+
+}

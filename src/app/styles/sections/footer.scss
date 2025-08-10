@@ -1,0 +1,17 @@
+
+.icon{
+    width: 25px;
+    margin: 5px;
+    text-decoration: none;
+
+    :hover{
+        color: dimgray;
+        color: #001144;
+        transition: all .3s;
+        transform: scale(0.9);
+    }
+    :active{
+        transition: all .3s;
+        transform: scale(1.1);
+    }
+}

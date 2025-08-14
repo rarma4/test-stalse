@@ -75,17 +75,20 @@ export default function Lancamento() {
     Plot: string;
     [key: string]: any;
   };
-
+  
   const [movies, setMovies] = useState<Movie[]>([]);
-
+  
   async function getMovies() {
     try {
+      const apiKey = process.env.NEXT_PUBLIC_APIKEY;
       const responses = await Promise.all(
         moviesForCard.map(id =>
-          api.get(`/?i=${id}&apikey=1e5700a2`).then(res => res.data)
+          api.get(`/?i=${id}&apikey=${apiKey}`).then(res => res.data)
+          // api.get(`/?i=${id}&apikey=1e5700a2`).then(res => res.data)
         )
       );
       setMovies(responses);
+      console.log(apiKey)
     } catch (error) {
       console.error("Erro ao buscar filmes:", error);
     }
